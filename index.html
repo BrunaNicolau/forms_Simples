@@ -10,11 +10,13 @@
 </head>
 
 <body>
-  <h1>Muita gente fala em tecnologia no Brasil. Muita gente só fala.</h1>
-  <h3>Aqui não. MArque uam conversa</h3>
+  <div class="contactForm">
+    <section>
+      <h1>Muita gente fala em tecnologia no Brasil.</h1>
+      <h2>Muita gente só fala.</h2>
+      <p>Aqui não. Marque uma conversa</p>
+    </section>
 
-  <fieldset>
-    <legend>Contato</legend>
     <form action="">
 
       <input type="text" id="name" name="name" placeholder="Nome">
@@ -23,8 +25,8 @@
 
       <input type="text" id="Cargo" name="cargo" placeholder="Cargo">
 
-      <input type="text" list="nivel" name="nivel" placeholder="Nível">
-      <datalist id="nivel">
+      <input type="text" list="level" name="title" placeholder="Nível">
+      <datalist id="level">
         <option value="partner">Sócio (a)/ Proprietário (a)</option>
         <option value="c-level">C-level</option>
         <option value="director">Diretor (a)</option>
@@ -33,15 +35,55 @@
         <option value="analist">Analista</option>
         <option value="inter">Estagiário (a)/Estudante</option>
         <option value="n/a">Não se aplica</option>
-
       </datalist>
 
-      <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+      <input type="text" id="company" name="company" placeholder="Empresa">
 
-      <button type="submit">Submit</button>
+      <input type="text" id="business segment" list="segment" name="business segment" placeholder="Segmento da empresa">
+      <datalist id="segment">
+        <option>Agricultura</option>
+        <option>Alta tecnologia</option>
+        <option>Bens de consumo</option>
+        <option>Construção</option>
+        <option>Educaçâo</option>
+        <option>Financeiro</option>
+        <option>Manufatura</option>
+        <option>Mídia</option>
+        <option>Serviços</option>
+        <option>Transporte</option>
+        <option>Turismo/Lazer</option>
+        <option>Entretenimento</option>
+        <option>Seguros</option>
+        <option>Òrgão público</option>
+        <option>Corretor de Seguros</option>
+        <option>Corretor de Valores</option>
+        <option>Fintechs</option>
+        <option>Saúde</option>
+        <option>Varejo</option>
+        <option>Meios de Pagamento</option>
+        <option>Telecom</option>
+        <option>Programa de Fidelidade</option>
+        <option>Cartões de beneficios</option>
+        <option>Indústria</option>
+        <option>Não se aplica</option>
+      </datalist>
+
+      <input type="tel" name="telephone" placeholder="Telefone" required>
+
+      <input type="text" id="typeRequest" list="request" name="typeRequest" placeholder="O que você deseja" required>
+      <datalist>
+        <option>Quero um contato da equipe comercial</option>
+        <option>Quero fazer parte do time Dextra</option>
+        <option>Tenho outra necessidade</option>
+      </datalist>
+
+      <textarea name="message" id="message" cols="40" rows="10"
+        placeholder="Conte um pouco sobre o seu desafio"></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
     </form>
 
-  </fieldset>
+  </div>
 
 </body>
 
